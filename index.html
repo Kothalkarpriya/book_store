@@ -1,31 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store</title>
-    <link href="lib/style.css" rel="stylesheet">
-    
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   <nav class="navbar">
-       <div class="navbrand">Book Store</div>
-       <ul class="non-bullet-list">
-           <li class="list">Home</li>
-           <li class="list">Books</li>
-           <li class="list">Text Books</li>
-           <li class="list">About Us</li>
-       </ul>
-   </nav>
-   <div>
-   </div>
-   <footer class="footer">
-      <p> It's Priya's Creation.
-          <hr>
-       Thank you for visiting!</p>
-   </footer>
-    <script src="lib/script.js" type="text/javascript">
+    <nav class="navbar">
+        <i class="fa fa-bars" id="bars"></i>
+        <i class="fa fa-times" id="times"></i>
+        <div class="logo-align">
+            <img src="logo-design.svg" id="logo">
+        </div>
+        <div>
+            <h1 class="site-name">Book Store</h1>
+        </div>
+        <div class="nav-ele">
+            <ul>
+                <li class="list">Login</li>
+                <li class="list">Cart</li>
+                <li class="list">About Us</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="side-bar" id="sidemenu">
+            <ul>
+                <li class="list-ele">Books
+                    <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li class="list-ele">Arts and Photography</li>
+                        <li class="list-ele">Biographies and Memoirs</li>
+                        <li class="list-ele">Body, Mind and spitit</li>
+                        <li class="list-ele">Business and Economics</li>
+                        <li class="list-ele">Environment and Geography</li>
+                        <li class="list-ele">Lifestyle</li>
+                        <li class="list-ele">Fiction</li>
+                        <li class="list-ele">Travel and Hosliday</li>
+                    </ul>
+                </li>
+                <li class="list-ele">Text Books
+                    <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li class="list-ele">Computer Science and Engineering
+                            <!-- <i class="fa fa-angle-right"></i>
+                            <ul>
+                                <li class="list-ele">Subject 1</li>
+                                <li class="list-ele">SUbject 2</li>
+                                <li class="list-ele" i>Subject 3
+                                </li>
+                                <li class="list-ele">Subject 4</li>
+                                <li class="list-ele">Subject 5</li>
+                            </ul> -->
+                        </li>
+                        <li class="list-ele">Civil Engineering
+                            <!-- <i class="fa fa-angle-right"></i>
+                            <ul>
+                                <li class="list-ele">Subject 1</li>
+                                <li class="list-ele">SUbject 2</li>
+                                <li class="list-ele">Subject 3</li>
+                                <li class="list-ele">Subject 4</li>
+                                <li class="list-ele">Subject 5</li>
+                            </ul> -->
+                        </li>
+                        <li class="list-ele">Mechanical Engineering
+                            <!-- <i class="fa fa-angle-right"></i>
+                            <ul>
+                                <li class="list-ele">Subject 1</li>
+                                <li class="list-ele">SUbject 2</li>
+                                <li class="list-ele" i>Subject 3
+                                </li>
+                                <li class="list-ele">Subject 4</li>
+                                <li class="list-ele">Subject 5</li>
+                            </ul> -->
+                        </li>
+                        <li class="list-ele">Electronics and Telecommunication Engineering
+                            <!-- <i class="fa fa-angle-right"></i>
+                            <ul>
+                                <li class="list-ele">Subject 1</li>
+                                <li class="list-ele">SUbject 2</li>
+                                <li class="list-ele" i>Subject 3
+                                </li>
+                                <li class="list-ele">Subject 4</li>
+                                <li class="list-ele">Subject 5</li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-ele">MBA
+                    <!-- <i class="fa fa-angle-right"></i> -->
+                </li>
+                <li class="list-ele">Mtech
+                    <!-- <i class="fa fa-angle-right"></i> -->
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>It is a footer</footer>
+
+
+
+    <script src="script.js" type="text/javascript">
+        // function openmenu(){
+        //     document.getElementById("sidemenu").style.display = "block";
+        // }
     </script>
 </body>
+
 </html>

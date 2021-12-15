@@ -1,0 +1,149 @@
+:root{
+    --background-color:#1d3557;
+    --text-color:#ffffff;
+    --hover-color: #ffff3f;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color:var(--text-color);
+}
+/* ---------------------navbar---------------- */
+
+nav{
+    /* text-align: center; */
+    background: var(--background-color);
+    color: var(--text-color);
+}
+.navbar{
+    display:flex;
+}
+.navbar > div{
+    flex:0.5;
+}
+.navbar > .nav-ele{
+    margin-top: 2rem;
+}
+.nav-ele:hover{
+    color:var(--hover-color);
+}
+.fa-bars,.fa-times{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    /* width: 200px; */
+    /* display: none; */
+}
+
+
+#times{
+    display: none;
+}
+#bars{
+    display: none;
+}
+.navbar i{
+    font-size: 30px;
+}
+#logo{
+    height: 75px;
+    padding: 1rem;
+}
+.site-name {
+    font-size: xx-large;
+}
+
+.list{
+    display: inline;
+    padding-inline-start: 1rem;
+    padding-right: 1rem;
+    font-size: large;
+    /* display: block; */
+}
+
+
+
+
+
+/* --------- ------main ----- -------------- */
+main{
+    text-align: center;
+}
+.list-ele {
+    list-style: none;
+    text-align: left;
+    max-width: 200px;
+    padding: 0.5rem 1rem;
+    background:var(--background-color);
+}
+
+ul{
+    padding: 0;
+    margin: auto;
+    top:133px;
+}
+.side-bar{
+    width:200px;
+    /* top:133px; */
+    margin-top: 10px;
+}
+
+.list-ele i{
+    font-size: 1rem;
+}
+
+.list-ele:hover{
+    color:var(--hover-color);
+}
+.side-bar ul li ul{
+    display: none;
+    /* z-index: 10; */
+    /* top:77px; */
+}
+
+.side-bar ul li:hover ul{
+    display: block;
+    margin-left: 14%;
+    height: 400px;
+    position: fixed;
+    padding: 0 100px 10px 10px;
+}
+.fa-angle-right{
+    float: right;
+}
+
+/* ---------for small screen */
+@media only screen and (max-width: 600px){
+    .side-bar{
+        width: 34%;
+        position: fixed;
+        z-index: 20;
+        /* font-size: 12px; */
+        /* margin-top: 100px; */
+        top:133px;
+        display: none;
+    }
+    .side-bar ul li ul{
+        top:133px;
+    }
+    .side-bar ul li:hover ul{
+        margin-left: 30%;
+    }
+    #bars{
+        display:block;
+    }
+}
+
+
+/* --------------- ---footer----------------- */
+
+
+footer{
+    text-align: center;
+    background:var(--background-color);
+    color: var(--text-color);
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+}
