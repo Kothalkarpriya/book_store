@@ -11,7 +11,7 @@ body{
 /* ---------------------navbar---------------- */
 
 nav{
-    /* text-align: center; */
+    text-align: center;
     background: var(--background-color);
     color: var(--text-color);
 }
@@ -20,11 +20,13 @@ nav{
 }
 .navbar > div{
     flex:0.5;
+        /* text-align: center; */
 }
-.navbar > .nav-ele{
-    margin-top: 2rem;
-}
-.nav-ele:hover{
+/* .navbar > .nav-ele{
+    margin-top: 2rem; 
+    text-align: center;
+} */
+.list:hover{
     color:var(--hover-color);
 }
 .fa-bars,.fa-times{
@@ -33,8 +35,13 @@ nav{
     /* width: 200px; */
     /* display: none; */
 }
-
-
+.fa-user, .fa-shopping-cart{
+    padding:10px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
 #times{
     display: none;
 }
