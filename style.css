@@ -180,8 +180,8 @@ ul {
     padding:10px;
 }
 .slider img{
-    /* width: 400px !important; */
-    height: 400px !important;
+    /* width: 600px !important; */
+    height: 600px !important;
 }
 .carousel{
     box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
@@ -201,10 +201,20 @@ ul {
         width: 300px;
     }
 }
+/* ----------------featured-categories------------- */
+.featured-categories{
+    margin:50px 0;
+}
+.featured-categories img{
+    width:100%;
+    padding:20px 0;
+    transition: 1s;
+    cursor:pointer;
+}
 
-
-
-
+.featured-categories img:hover{
+    transform:scale(1.1);
+}
 
 
 
