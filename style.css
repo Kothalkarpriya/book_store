@@ -30,7 +30,7 @@ nav {
 
 .navbar > .nav-ele{
     /* margin-top: 2rem;  */
-    text-align: center;
+    text-align: right;
 }
 .list:hover {
     color: var(--hover-color);
@@ -83,10 +83,6 @@ a {
     font-size: large;
     /* display: block; */
 }
-
-
-
-
 
 /* --------- ------main ----- -------------- */
 main {
@@ -204,8 +200,8 @@ ul {
 }
 /* ----------------featured-categories------------- */
 .featured-categories{
-    /* margin:50px 0 !important; */
-    margin: auto;
+    margin:50px 0 !important;
+    /* margin: auto; */
     /* max-width: 1000px !important; */
 }
 .featured-categories img{
@@ -232,9 +228,9 @@ ul {
 
 .on-sale{
     margin: auto;
-    padding-left:2rem;
+    /* padding-left:2rem;    */
     width:85%;
-    margin-left: 8%;
+    /* margin-left: 8%; */
 }
 .title-box{
     background-color:var(--background-color);
@@ -253,8 +249,7 @@ ul {
     color:var(--hover-color);
 }
 
-.title-box::after
-{
+.title-box::after{
     content: '';
     border-top: 40px solid var(--background-color);
     border-right: 50px solid transparent;
@@ -299,8 +294,7 @@ ul {
     box-shadow: none !important;
 }
  
-.product-top:hover .overlay-right 
-{
+.product-top:hover .overlay-right {
     opacity: 1;
     margin-left: 5%;
     transition: 0.5s;
@@ -323,13 +317,27 @@ ul {
     padding-bottom: 10px;
 }
 
+.new-products{
+    margin:50px 0;
+}
+
+.website-features{
+    margin:50px 0;
+}
+.website-features img{
+    width:20%;
+}
 
 
-
-
-
-
-
+.feature-text{
+    margin-top:10px;
+    float:right;
+    width:80%;
+    padding-left:20px;
+}
+.feature-box{
+    padding-top:20px;
+}
 
 
 
@@ -341,12 +349,34 @@ ul {
 
 
 footer {
-    text-align: center;
+    /* text-align: center; */
     background: var(--background-color);
     color: var(--text-color);
     /* position: fixed; */
-    bottom: 0;
+    /* bottom: 0; */
     padding: 2rem;
     margin: auto;
     width: 100%;
+}
+footer h1{
+    font-size:15px;
+    margin:25px 0;
+}
+footer p{
+    font-size:12px;
+}
+.regards{
+    font-size:15px;
+}
+.fa-heart-o{
+    color:red;
+    font-size:15px;
+}
+footer hr{
+    margin-top:10px;
+    background-color:var(--text-color);
+}
+footer .row .fa{
+    padding-right:20px;
+    font-size:15px;
 }
