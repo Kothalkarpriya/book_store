@@ -229,7 +229,7 @@ ul {
 .on-sale{
     margin: auto;
     /* padding-left:2rem;    */
-    width:85%;
+    /* width:85%; */
     /* margin-left: 8%; */
 }
 .title-box{
@@ -379,4 +379,60 @@ footer hr{
 footer .row .fa{
     padding-right:20px;
     font-size:15px;
+}
+/* ----------------single product ---------------- */
+
+.single-product{
+
+    margin-top:70px;
+}
+.new-arrival{
+    background:var(--background-color);
+    width:50px;
+    color:var(--text-color);
+    font-size:12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.color-md-7 h2{
+    color:var(--background-color);
+}
+
+.single-product .fa{
+    color:var(--background-color);
+}
+.single-product .price{
+    color:var(--background-color);
+    font-size:26px;
+    font-weight:bold;
+    padding-top:20px;
+}
+.single-product input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height:33px;
+    text-align:center;
+    width:30px;
+}
+.single-product .btn-primary{
+    background: var(--background-color) !important;
+    color: var(--text-color);
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    box-shadow: none !important;
+}
+
+.product-description h6{
+    margin-top:50px;
+    color:var(--background-color);
+
+}
+.product-description p{
+    margin-top:30px;
+}
+
+.product-description hr{
+    margin-bottom: 50px;
 }
