@@ -105,7 +105,7 @@ ul {
 }
 
 .side-bar {
-    width: 15%;
+    width: 20%;
     /* top:133px; */
     height:79%;
     font-size: 14px;
@@ -130,6 +130,7 @@ ul {
 
 .side-bar ul li:hover ul {
     display: block;
+    transition-duration:3s;
     margin-left: 14%;
     height: 400px;
     position: fixed;
@@ -172,8 +173,8 @@ ul {
 /* ----------------------------slider------------*/
 
 .slider{
-    width:85%;
-    margin-left:15%;
+    width:80%;
+    margin-left:20%;
     padding:10px;
 }
 .slider img{
