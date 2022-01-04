@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Life worthy</title>
+    <link href="/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <i class="fa fa-bars" id="bars"></i>
+        <i class="fa fa-times" id="times"></i>
+        <!-- <div class="logo-align">
+                <img src="logo-design.svg" id="logo">
+            </div> -->
+        <div>
+            <h1 class="site-name"><a href="/index.html">Book Store</a></h1>
+        </div>
+        <div class="nav-ele">
+            <ul>
+                <li class="list"><i class="fa fa-user"></i><a href="/products/user-login.html">Login</a></li>
+                <li class="list"><i class="fa fa-shopping-cart"></i>Cart</li>
+                <li class="list"><a href="/products/about-us.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div id="product-slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/lib/booksimage/art of luca.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/lib/booksimage/art of luca.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/lib/booksimage/art of luca.jpg" class="d-block w-100">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#product-slider"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#product-slider"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <p class="new-arrival text-center">New</p>
+                    <h2>The Arts Of Luca</h2>
+                    <p>Product COde: A1234</p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <p class="price">Rs. 400</p>
+                    <p><b>Availability:</b> In Stock</p>
+                    <p><b>Condition:</b> New</p>
+                    <p><b>Brand:</b> XYZ company</p>
+                    <label>Quantity:</label>
+                    <input type="number" value="1" />
+                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ----product-description------- -->
+    <section class="product-description">
+        <div class="container">
+            <h6> Product Description</h6>
+            <p>Compiler Design is a subject of COmputer Science Engineering Perticularly. As It can be brought toghether
+                with all the other Books we have related to computer science. IT is mainly teach in college in 6th
+                semister. </p>
+            <p>
+                Compiler Design is a subject of COmputer Science Engineering Perticularly. As It can be brought
+                toghether with all the
+                other Books we have related to computer science. IT is mainly teach in college in 6th semister.
+            </p>
+            <hr>
+    
+        </div>
+        <div class="container">
+            <div class="title-box">
+                <h2>Similar Products</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="/lib/computer science/operating system.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick shop ">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Operating Systems </h3>
+                        <h5>Rs. 450</h5>
+    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="/lib/computer science/system programming.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick shop ">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                        <h3>System programming</h3>
+                        <h5>Rs.400</h5>
+    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="/lib/computer science/compiler design.jpg">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick shop ">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>compiler Design </h3>
+                        <h5>Rs.400</h5>
+    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="/lib/computer science/computer-science-500x500.png">
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Quick shop ">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Computer science</h3>
+                        <h5>Rs.550</h5>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Return Policy</p>
+                    <p>Discount Coupons</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us on</h1>
+                    <p><i class="fa fa-twitter"></i> Twitter</p>
+                    <p><i class="fa fa-linkedin"></i> Linkedin</p>
+                    <p><i class="fa fa-github"></i> Github</p>
+                    <p><i class="fa fa-youtube-play"></i> YouTube</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Address</h1>
+                    <p>Mhada colony, Near International Airport, Aurangabad, Mhaharashtra, India 431001</p>
+                    <hr>
+                    <p class="regards">Made with <i class="fa fa-heart-o"></i> Priya Kothalkar</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js" type="text/javascript"></script>
+</body>
+
+</html>
