@@ -1,12 +1,19 @@
 const express = require("express");
+const path = require("path");
 const app = express();
+require("./db/conn");
+
 const port = process.env.PORT || 3000;
 
+const static_path = path.join(__dirname, "../public");
+
+app.use(express.static(static_path));
+app.set("view Engine", "hbs");
+
 app.get("/", (req, res) => {
+    res.render("index.hbs");
+});
 
-    res.send("Hello From Priya's Book STore");
-})
-
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`server is running at port no ${port}`);
-})
+});
