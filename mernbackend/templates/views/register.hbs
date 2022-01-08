@@ -41,10 +41,10 @@
                 <form action="/register" method="POST">
                     <div class="row g-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="First name" name="First name" />
+                            <input type="text" class="form-control" placeholder="First name" name="firstname" />
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Last name" name="Last name" />
+                            <input type="text" class="form-control" placeholder="Last name" name="lastname" />
                         </div>
                     </div>
                     <hr>
@@ -79,6 +79,11 @@
                     <div class="mb-3">
                         {{!-- <label for="exampleInputPassword1" class="form-label">Password</label> --}}
                         <input type="password" placeholder="Enter Password" class="form-control" name="password"
+                            id="exampleInputPassword1" />
+                    </div>
+                    <div class="mb-3">
+                        {{!-- <label for="exampleInputPassword1" class="form-label">Password</label> --}}
+                        <input type="password" placeholder="Enter your Password again" class="form-control" name="confirmpassword"
                             id="exampleInputPassword1" />
                     </div>
                     <input type="submit" class="btn btn-primary" value="Register" />
