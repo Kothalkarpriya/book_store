@@ -3,11 +3,14 @@
     --text-color: #ffffff;
     --hover-color: #ffff3f;
 }
+
 body {
     margin: 0;
     padding: 0;
     /* color: var(--text-color) !important; */
 }
+
+/* ---------------------navbar---------------- */
 
 nav {
     text-align: center;
@@ -31,4 +34,455 @@ nav {
 }
 .list:hover {
     color: var(--hover-color);
+}
+
+/* .fa-bars,
+.fa-times {
+   padding-top: 2rem;
+    padding-left: 2rem;
+    width: 200px;
+    display: none;
+} */
+
+.fa-user,
+.fa-shopping-cart {
+    padding: 8px;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+}
+
+#times {
+    display: none;
+}
+
+#bars {
+    display: none;
+}
+
+.navbar i {
+    font-size: 30px;
+}
+
+#logo {
+    height: 75px !important;
+    padding: 1rem !important;
+}
+
+.site-name {
+    font-size: xx-large;
+    text-align: right;
+}
+
+.list {
+    display: inline;
+    padding-inline-start: 1rem;
+    padding-right: 1rem;
+    font-size: large;
+    /* display: block; */
+}
+
+/* --------- ------main ----- -------------- */
+main {
+    text-align: center;
+}
+
+.list-ele {
+    list-style: none;
+    text-align: left;
+    max-width: 200px;
+    padding: 0.5rem 1rem;
+    background: var(--background-color);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    top: 133px;
+    padding-left: 0 !important;
+}
+
+.side-bar {
+    width: 15%;
+    /* top:133px; */
+    height:79%;
+    font-size: 14px;
+    float:left;
+    margin-top: 10px;
+    color:var(--text-color);
+}
+
+.list-ele i {
+    font-size: 1rem;
+}
+
+.list-ele:hover {
+    color: var(--hover-color);
+}
+
+.side-bar ul li ul {
+    display: none;
+    z-index: 10;
+    top:77px;
+}
+
+.side-bar ul li:hover ul {
+    display: block;
+    transition-duration:3s;
+    margin-left: 14%;
+    height: 400px;
+    position: fixed;
+    padding: 0 100px 10px 10px;
+    color: var(--text-color);
+}
+.side-bar ul li ul li:hover{
+    color: var(--hover-color);
+}
+.fa-angle-right {
+    float: right;
+}
+
+/* ---------for small screen */
+@media only screen and (max-width: 800px) {
+    .side-bar {
+        width: 34%;
+        position: fixed;
+        z-index: 20;
+        font-size: 12px;
+        margin-top: 20px;
+        top: 133px;
+        display: none;
+    }
+
+    .side-bar ul li ul {
+        top: 133px;
+        color: var(--text-color);
+    }
+
+    .side-bar ul li:hover ul {
+        margin-left: 30%;
+    }
+
+    #bars {
+        display: block;
+    }
+}
+
+/* ----------------------------slider------------*/
+
+.slider{
+    width:85%;
+    margin-left:15%;
+    padding:10px;
+}
+.slider img{
+    /* width: 600px !important; */
+    height: 400px !important;
+}
+.carousel{
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators{
+    z-index: 1 !important;
+}
+
+@media only screen and (max-width:800px){
+    .slider{
+        width:100%;
+        margin-left:0;
+        padding:10px;
+    }
+    .slider img{
+        height: 300px;
+        width: 300px;
+    }
+}
+/* ----------------featured-categories------------- */
+.featured-categories{
+    margin:50px 0 5px 0!important;
+    /* margin: auto; */
+    /* max-width: 1000px !important; */
+}
+.featured-categories img{
+    width:80%;
+    height:80%;
+    padding:20px 0;
+    transition: 1s;
+    cursor:pointer;
+}
+
+.featured-categories img:hover{
+    transform:scale(1.1);
+}
+@media only screen and (max-width:800px){
+    .featured-categories img{
+        max-width: 350px !important;
+    }
+    .on-sale img{
+        max-width: 350px !important;
+    }
+}
+
+/* ----------------On sale------------------- */
+
+.on-sale{
+    margin: auto;
+    /* padding-left:2rem;    */
+    /* width:85%; */
+    /* margin-left: 8%; */
+}
+.title-box{
+    background-color:var(--background-color);
+    color:var(--text-color);
+    width:450px;
+    padding:4px 10px;
+    height:40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.title-box h2{
+    font-size: 24px;
+}
+.title-box:hover{
+    color:var(--hover-color);
+}
+
+.title-box::after{
+    content: '';
+    border-top: 40px solid var(--background-color);
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 440px;
+}
+
+/* -------------product-top------------------- */
+
+.product-top img {
+    width:100%;
+    /* padding:2px; */
+    height:200px;
+}
+
+.overlay-right {
+    display:inline-flex;
+    opacity:1;
+    /* position:absolute; */
+    top:10%;
+    /* margin-left: 1px; */
+    margin: auto !important;
+    /* width: 20px; */
+}
+.overlay-right .fa {
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay-right .btn-secondary {
+    background: none !important;
+    border:none !important;
+    box-shadow: none !important;
+}
+ 
+.product-top:hover .overlay-right {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+/* ------------------Product bottom-------- */
+.product-bottom .fa{
+    color:var(--background-color);
+    /* color:var(--text-color); */
+    font-size:10px;
+}
+
+.product-bottom h3{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.product-bottom h5{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.new-products{
+    margin:50px 0;
+}
+
+.website-features{
+    margin:50px 0;
+}
+.website-features img{
+    width:20%;
+}
+
+
+.feature-text{
+    margin-top:10px;
+    float:right;
+    width:80%;
+    padding-left:20px;
+}
+.feature-box{
+    padding-top:20px;
+}
+
+
+/* --------------- ---footer----------------- */
+
+
+footer {
+    /* text-align: center; */
+    background: var(--background-color);
+    color: var(--text-color);
+    /* position: fixed; */
+    /* bottom: 0; */
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+}
+footer h1{
+    font-size:15px;
+    margin:25px 0;
+}
+footer p{
+    font-size:12px;
+}
+.regards{
+    font-size:15px;
+}
+.fa-heart-o{
+    color:red;
+    font-size:15px;
+}
+footer hr{
+    margin-top:10px;
+    background-color:var(--text-color);
+}
+footer .row .fa{
+    padding-right:20px;
+    font-size:15px;
+}
+/* ----------------single product ---------------- */
+
+.single-product{
+
+    margin-top:70px;
+}
+.new-arrival{
+    background:var(--background-color);
+    width:50px;
+    color:var(--text-color);
+    font-size:12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.color-md-7 h2{
+    color:var(--background-color);
+}
+
+.single-product .fa{
+    color:var(--background-color);
+}
+.single-product .price{
+    color:var(--background-color);
+    font-size:26px;
+    font-weight:bold;
+    padding-top:20px;
+}
+.single-product input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height:33px;
+    text-align:center;
+    width:30px;
+}
+.single-product .btn-primary{
+    background: var(--background-color) !important;
+    color: var(--text-color);
+    font-size: 15px;
+    margin-left: 20px;
+    border: none;
+    box-shadow: none !important;
+}
+
+.product-description h6{
+    margin-top:50px;
+    color:var(--background-color);
+
+}
+.product-description p{
+    margin-top:30px;
+}
+
+.product-description hr{
+    margin-bottom: 50px;
+}
+
+/* ----------products css------------------------- */
+.component {
+    width:85%;
+    /* margin:auto; */
+    margin-left: 15%;
+    padding:1rem;
+}
+
+@media only screen and (max-width:800px) {
+    .component{
+        width:100%;
+        margin-left:0;
+        padding:1rem;
+    }
+}
+
+.logincontainer{
+    max-width: 700px;
+    margin: auto;
+    padding:1rem;
+}
+
+.logincontainer h1{
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.loginarticle{
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+.loginarticle div{
+    padding:0.2rem;
+}
+.loginarticle div input{
+    border:1px solid var(--background-color);
+    color: var(--background-color);
+}
+.loginarticle div input:hover{
+    border: 3px solid var(--hover-color);
+}
+
+.loginarticle .btn{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.loginarticle .btn:hover{
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    font-weight: bold;
 }

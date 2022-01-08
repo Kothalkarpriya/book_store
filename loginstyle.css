@@ -18,7 +18,7 @@
 }
 
 .loginarticle{
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: auto;
 }
 
@@ -31,4 +31,14 @@
 }
 .loginarticle div input:hover{
     border: 3px solid var(--hover-color);
+}
+
+.loginarticle button{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.loginarticle button:hover{
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    font-weight: bold;
 }
