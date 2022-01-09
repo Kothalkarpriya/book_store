@@ -78,7 +78,7 @@ app.post("/login", async(req,res)=>{
             res.send("Please insert correct details");
         }
     }catch(error){
-        res.status(400).send("invalid details");
+        res.status(400).send("Invalid Details");
     }
 });
 
