@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login</title>
     <link href="style.css" rel="stylesheet">
     <link href="loginstyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,10 +14,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-     <nav class="navbar">
-        <i class="fa fa-bars" id="bars"></i>
-        <i class="fa fa-times" id="times"></i>
+    <nav class="navbar">
+        <!-- <i class="fa fa-bars" id="bars"></i> -->
+        <!-- <i class="fa fa-times" id="times"></i> -->
         <!-- <div class="logo-align">
             <img src="logo-design.svg" id="logo">
         </div> -->
@@ -25,7 +27,7 @@
         </div>
         <div class="nav-ele">
             <ul>
-                <li class="list"><i class="fa fa-user"></i><a href="./register.hbs">Login</a></li>
+                <li class="list"><i class="fa fa-user"></i><a href="./login.hbs">Login</a></li>
                 <li class="list"><i class="fa fa-shopping-cart"></i>Cart</li>
                 <li class="list"><a href="/products/about-us.html">About Us</a></li>
             </ul>
@@ -36,56 +38,18 @@
         <section class="logincontainer">
             <h1>Welcome to our Book Store!</h1>
             <article class="loginarticle">
-                <form>
-                    <div class="row g-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row g-3">
-                        <div class="col">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col">
-                            <label for="inputState" class="form-label">State</label>
-                            <input id="inputState" class="form-control" type="text">
-                        </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                    </div>
-                    <hr>
+                <form class="loginform" action="/login" method="POST">
+                    <h3>User Login </h3>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" placeholder="Enter your Email address"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <input type="text" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
                     </div>
-
-                    <hr>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address Line 1</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <hr>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address Line 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-                    <hr>
+                    <!-- <hr> -->
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
                         <input type="password" placeholder="Enter Password" class="form-control"
-                            id="exampleInputPassword1">
+                            id="exampleInputPassword1" name="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input type="submit" value="login" class="btn btn-primary"/>
                 </form>
 
             </article>
@@ -128,6 +92,4 @@
 
 </body>
 
-</html>
-</body>
 </html>

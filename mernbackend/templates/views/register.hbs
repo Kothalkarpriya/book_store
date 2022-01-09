@@ -17,8 +17,8 @@
 
 <body>
     <nav class="navbar">
-        <i class="fa fa-bars" id="bars"></i>
-        <i class="fa fa-times" id="times"></i>
+        {{!-- <i class="fa fa-bars" id="bars"></i> --}}
+        {{!-- <i class="fa fa-times" id="times"></i> --}}
         <!-- <div class="logo-align">
             <img src="logo-design.svg" id="logo">
         </div> -->
@@ -83,10 +83,18 @@
                     </div>
                     <div class="mb-3">
                         {{!-- <label for="exampleInputPassword1" class="form-label">Password</label> --}}
-                        <input type="password" placeholder="Enter your Password again" class="form-control" name="confirmpassword"
-                            id="exampleInputPassword1" />
+                        <input type="password" placeholder="Enter your Password again" class="form-control"
+                            name="confirmpassword" id="exampleInputPassword1" />
                     </div>
                     <input type="submit" class="btn btn-primary" value="Register" />
+
+                    <hr>
+                    {{!-- <hr> --}}
+                    <div class="login">
+                        Do you already have account?</div>
+                        {{!-- <hr> --}}
+                    <a href="./login.hbs" type="submit" class="btn btn-primary">Login</a>
+                    
                 </form>
             </article>
         </section>

@@ -17,19 +17,19 @@
 
 <body>
     <nav class="navbar">
-        <i class="fa fa-bars" id="bars"></i>
-        <i class="fa fa-times" id="times"></i>
+        <!-- <i class="fa fa-bars" id="bars"></i> -->
+        <!-- <i class="fa fa-times" id="times"></i> -->
         <!-- <div class="logo-align">
             <img src="logo-design.svg" id="logo">
         </div> -->
         <div>
-            <h1 class="site-name"><a href="index.html">Book Store</a></h1>
+            <h1 class="site-name"><a href="/index.html">Book Store</a></h1>
         </div>
         <div class="nav-ele">
             <ul>
                 <li class="list"><i class="fa fa-user"></i><a href="products/user-login.html" s>Login</a></li>
                 <li class="list"><i class="fa fa-shopping-cart"></i>Cart</li>
-                <li class="list"><a href="products/about-us.html">About Us</a></li>
+                <li class="list"><a href="/products/about-us.html">About Us</a></li>
             </ul>
         </div>
     </nav>
@@ -38,56 +38,18 @@
         <section class="logincontainer">
             <h1>Welcome to our Book Store!</h1>
             <article class="loginarticle">
-                <form>
-                    <div class="row g-3">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row g-3">
-                        <div class="col">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="col">
-                            <label for="inputState" class="form-label">State</label>
-                            <input id="inputState" class="form-control" type="text">
-                        </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="inputZip">
-                        </div>
-                    </div>
-                    <hr>
+                <form class="loginform">
+                    <h3>User Login </h3>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" placeholder="Enter your Email address"
-                            id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                     </div>
-
-                    <hr>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address Line 1</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <hr>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address Line 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-                    <hr>
+                    <!-- <hr> -->
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
                         <input type="password" placeholder="Enter Password" class="form-control"
                             id="exampleInputPassword1">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <input type="submit" value="login" class="btn btn-primary"/>
                 </form>
 
             </article>

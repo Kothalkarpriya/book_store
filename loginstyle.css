@@ -42,3 +42,31 @@
     color: var(--background-color);
     font-weight: bold;
 }
+
+
+
+/* login form css */
+
+.loginform h3{
+    font-weight: bolder;
+    color:var(--text-color);
+}
+
+.loginform{
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-color);
+}
+
+.loginform .btn{
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+}
+
+.loginform .btn:hover{
+    background-color: var(--hover-color);
+    color:var(--background-color);
+    font-weight: bold;
+}

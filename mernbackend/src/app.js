@@ -25,6 +25,13 @@ app.get("/", (req, res) => {
     res.render("register.hbs");
 });
 
+app.get("/login.hbs",(req,res)=>{
+     res.render("login.hbs");
+});
+// app.get("/index",(req,res)=>{
+//     res.render("index.html");
+// });
+
 app.post("/register", async(req,res) => {
     // res.render("register.hbs");
     try{
@@ -57,13 +64,6 @@ app.post("/register", async(req,res) => {
         res.status(400).send(error);
     }
 })
-
-// app.get("/",(req,res)=>{
-//     res.render("login.hbs");
-// });
-// app.get("/index",(req,res)=>{
-//     res.render("index.html");
-// });
 
 
 app.listen(port, () => {
