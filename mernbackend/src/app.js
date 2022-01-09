@@ -65,6 +65,22 @@ app.post("/register", async(req,res) => {
     }
 })
 
+// login check
+app.post("/login", async(req,res)=>{
+    try{
+        const email = req.body.email;
+        const password = req.body.password;
+        const userEmail = await Register.findOne({email:email});
+    
+        if(userEmail.password === password){
+            res.status(201).render("register.hbs");
+        }else{
+            res.send("Please insert correct details");
+        }
+    }catch(error){
+        res.status(400).send("invalid details");
+    }
+});
 
 app.listen(port, () => {
     console.log(`server is running at port no ${port}`);
