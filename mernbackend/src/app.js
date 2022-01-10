@@ -44,6 +44,10 @@ app.get("/", (req, res) => {
     res.render("index.hbs");
 });
 
+app.get("/index.hbs", (req, res) => {
+    res.render("index.hbs");
+});
+
 app.get("/register.hbs", (req, res) => {
     res.render("register.hbs");
 });
@@ -74,6 +78,9 @@ app.get("/body-mind.hbs", (req, res) => {
 });
 app.get("/building_a_life.hbs", (req, res) => {
     res.render("building_a_life.hbs");
+});
+app.get("/business-and-economics.hbs", (req, res) => {
+    res.render("business-and-economics.hbs");
 });
 app.get("/environment.hbs", (req, res) => {
     res.render("environment.hbs");
