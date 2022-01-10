@@ -17,8 +17,8 @@ const icons_path = path.join(__dirname, "../public/lib/icons");
 
 const templates_path = path.join(__dirname, "../templates/views");
 const partials_path = path.join(__dirname, "../templates/partials");
-const book_path = path.join(__dirname,"../templates/books");
-const text_books_path = path.join(__dirname,"../templates/text-books");
+// const book_path = path.join(__dirname,"../templates/books");
+// const text_books_path = path.join(__dirname,"../templates/text-books");
 
 
 app.use(express.static(static_path));
@@ -32,8 +32,8 @@ app.use(express.static(icons_path));
 app.set("view Engine", "hbs");
 
 app.set("views" ,templates_path);
-app.set("books",book_path);
-app.set("text-books",text_books_path);
+// app.set("books",book_path);
+// app.set("text-books",text_books_path);
 
 hbs.registerPartials(partials_path);
 
@@ -56,11 +56,11 @@ app.get("/about-us.hbs",(req,res)=>{
 });
 
 // books 
-app.get("../arts_of_luca.hbs", (req, res) => {
+app.get("/arts_of_luca.hbs", (req, res) => {
     res.render("arts_of_luca.hbs");
 });
 
-app.get("../arts-and-photo.hbs", (req, res) => {
+app.get("/arts-and-photo.hbs", (req, res) => {
     res.render("arts-and-photo.hbs");
 });
 app.get("/avtar.hbs", (req, res) => {

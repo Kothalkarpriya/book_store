@@ -92,7 +92,7 @@ main {
 .list-ele {
     list-style: none;
     text-align: left;
-    max-width: 200px;
+    /* max-width: 200px; */
     padding: 0.5rem 1rem;
     background: var(--background-color);
 }
