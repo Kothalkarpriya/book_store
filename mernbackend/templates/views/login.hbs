@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    {{!-- <link href="style.css" rel="stylesheet"> --}}
     <link href="loginstyle.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,44 +16,44 @@
 
 <body>
     <nav class="navbar">
-        <!-- <i class="fa fa-bars" id="bars"></i> -->
-        <!-- <i class="fa fa-times" id="times"></i> -->
+        <i class="fa fa-bars" id="bars"></i>
+        <i class="fa fa-times" id="times"></i>
         <!-- <div class="logo-align">
             <img src="logo-design.svg" id="logo">
         </div> -->
         <div>
-            <h1 class="site-name"><a href="./index.hbs">Book Store</a></h1>
+            <h1 class="site-name"><a href="index.hbs">Book Store</a></h1>
         </div>
         <div class="nav-ele">
             <ul>
-                <li class="list"><i class="fa fa-user"></i><a href="./login.hbs">Login</a></li>
+                <li class="list"><i class="fa fa-user"></i><a href="register.hbs">Login</a></li>
                 <li class="list"><i class="fa fa-shopping-cart"></i>Cart</li>
-                <li class="list"><a href="./about-us.hbs">About Us</a></li>
+                <li class="list"><a href="about-us.hbs">About Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <section class="logincontainer">
-            <h1>Welcome to our Book Store!</h1>
-            <article class="loginarticle">
-                <form class="loginform" action="/login" method="POST">
-                    <h3>User Login </h3>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Email address" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
-                    </div>
-                    <!-- <hr> -->
-                    <div class="mb-3">
-                        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                        <input type="password" placeholder="Enter Password" class="form-control"
-                            id="exampleInputPassword1" name="password" required>
-                    </div>
-                    <input type="submit" value="login" class="btn btn-primary"/>
-                </form>
+    <section class="logincontainer">
+        <h1>Welcome to our Book Store!</h1>
+        <article class="loginarticle">
+            <form class="loginform" action="/login" method="POST">
+                <h3>User Login </h3>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Email address" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" name="email" required>
+                </div>
+                <!-- <hr> -->
+                <div class="mb-3">
+                    <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+                    <input type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1"
+                        name="password" required>
+                </div>
+                <input type="submit" value="login" class="btn btn-primary" />
+            </form>
 
-            </article>
+        </article>
 
-        </section>
+    </section>
     </main>
     <footer>
         <div class="container text-center">
