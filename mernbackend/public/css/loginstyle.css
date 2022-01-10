@@ -516,3 +516,45 @@ footer .row .fa{
     color:var(--background-color);
     font-weight: bold;
 }
+
+/* ----------cart--------------------- */
+
+.logincontainercart{
+    padding:2rem;
+    margin: auto;
+}
+.cart{
+    max-width: 700px;
+    margin:auto;
+    padding:2rem;
+    border:2px solid var(--background-color);
+    box-shadow: 7px 10px var(--background-color);
+
+}
+
+.cart table,tr,td{
+    padding:1rem;
+    width:50%;
+    /* align-items: center; */
+    font-weight: bold;
+}
+.cart table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.cart td,tr{
+    border: 1px solid var(--background-color);
+}
+
+.cart button{
+    background-color: var(--background-color);
+    color:var(--text-color);
+    padding: 1rem;
+}
+
+.cart button:hover{
+    background-color: var(--hover-color);
+    color: var(--background-color);
+    font-weight: bold;
+}

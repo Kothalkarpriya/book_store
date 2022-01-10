@@ -44,6 +44,9 @@ app.get("/", (req, res) => {
     res.render("index.hbs");
 });
 
+app.get("/cart.hbs", (req, res) => {
+    res.render("cart.hbs");
+});
 app.get("/index.hbs", (req, res) => {
     res.render("index.hbs");
 });
