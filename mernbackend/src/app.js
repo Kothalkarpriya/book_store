@@ -8,30 +8,72 @@ const Register = require("./models/register");
 const port = process.env.PORT || 3000;
 
 const static_path = path.join(__dirname, "../public/css");
+const javascript_path = path.join(__dirname,"../public/javascript");
+const image_path = path.join(__dirname, " ../public/lib");
 const templates_path = path.join(__dirname, "../templates/views");
 const partials_path = path.join(__dirname, "../templates/partials");
+const book_path = path.join(__dirname,"../templates/books");
 
 
 app.use(express.static(static_path));
+app.use(express.static(javascript_path));
+app.use(express.static(image_path));
 app.set("view Engine", "hbs");
 
 app.set("views" ,templates_path);
+app.set("books", book_path);
 hbs.registerPartials(partials_path);
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 app.get("/", (req, res) => {
+    res.render("index.hbs");
+});
+
+app.get("/register.hbs", (req, res) => {
     res.render("register.hbs");
 });
 
 app.get("/login.hbs",(req,res)=>{
      res.render("login.hbs");
 });
-// app.get("/index",(req,res)=>{
-//     res.render("index.html");
-// });
+app.get("/about-us.hbs",(req,res)=>{
+    res.render("about-us.hbs");
+});
 
+// books 
+app.get("/arts_of_luca.hbs", (req, res) => {
+    res.render("arts_of_luca.hbs");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// register post method
 app.post("/register", async(req,res) => {
     // res.render("register.hbs");
     try{
@@ -73,7 +115,7 @@ app.post("/login", async(req,res)=>{
         const userEmail = await Register.findOne({email:email});
     
         if(userEmail.password === password){
-            res.status(201).render("register.hbs");
+            res.status(201).render("index.hbs");
         }else{
             res.send("Please insert correct details");
         }

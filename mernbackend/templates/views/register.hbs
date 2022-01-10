@@ -41,50 +41,50 @@
                 <form action="/register" method="POST">
                     <div class="row g-3">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="First name" name="firstname" />
+                            <input type="text" class="form-control" placeholder="First name" name="firstname" required/>
                         </div>
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Last name" name="lastname" />
+                            <input type="text" class="form-control" placeholder="Last name" name="lastname" required/>
                         </div>
                     </div>
                     <hr>
                     <div class="row g-3">
                         <div class="col">
                             {{!-- <label for="inputCity" class="form-label">City</label> --}}
-                            <input type="text" class="form-control" name="city" id="inputCity" placeholder="City" />
+                            <input type="text" class="form-control" name="city" id="inputCity" placeholder="City" required/>
                         </div>
                         <div class="col">
                             {{!-- <label for="inputState" class="form-label">State</label> --}}
-                            <input id="inputState" class="form-control" placeholder="State" name="state" type="text" />
+                            <input id="inputState" class="form-control" placeholder="State" name="state" type="text" required/>
                         </div>
                         <div class="col-md-2">
                             {{!-- <label for="inputZip" class="form-label">Zip</label> --}}
-                            <input type="text" class="form-control" name="zip" placeholder="Zip code" id="inputZip" />
+                            <input type="text" class="form-control" name="zip" placeholder="Zip code" id="inputZip" required/>
                         </div>
                     </div>
                     <hr>
                     <div class="mb-3">
                         {{!-- <label for="exampleInputEmail1" class="form-label">Email address</label> --}}
                         <input type="email" class="form-control" placeholder="Email address" id="exampleInputEmail1"
-                            name="email" aria-describedby="emailHelp" />
+                            name="email" aria-describedby="emailHelp" required/>
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <hr>
                     <div class="col-12">
                         {{!-- <label for="inputAddress" class="form-label">Address Line 1</label> --}}
                         <input type="text" class="form-control" id="inputAddress" name="address"
-                            placeholder="Enter your address" />
+                            placeholder="Enter your address" required/>
                     </div>
                     <hr>
                     <div class="mb-3">
                         {{!-- <label for="exampleInputPassword1" class="form-label">Password</label> --}}
                         <input type="password" placeholder="Enter Password" class="form-control" name="password"
-                            id="exampleInputPassword" />
+                            id="exampleInputPassword" required/>
                     </div>
                     <div class="mb-3">
                         {{!-- <label for="exampleInputPassword1" class="form-label">Password</label> --}}
                         <input type="password" placeholder="Enter your Password again" class="form-control"
-                            name="confirmpassword" id="exampleInputPassword1" />
+                            name="confirmpassword" id="exampleInputPassword1" required />
                     </div>
                     <input type="submit" class="btn btn-primary" value="Register" />
 
