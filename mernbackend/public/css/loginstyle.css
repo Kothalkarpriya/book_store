@@ -48,6 +48,9 @@ nav {
 .fa-shopping-cart {
     padding: 8px;
 }
+.nav-ele .span{
+    padding-right: 10px;
+}
 
 a {
     text-decoration: none !important;
