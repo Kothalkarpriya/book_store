@@ -18,16 +18,14 @@
     <nav class="navbar">
         <i class="fa fa-bars" id="bars"></i>
         <i class="fa fa-times" id="times"></i>
-        <!-- <div class="logo-align">
-            <img src="logo-design.svg" id="logo">
-        </div> -->
         <div>
             <h1 class="site-name"><a href="index.hbs">Book Store</a></h1>
         </div>
         <div class="nav-ele">
             <ul>
                 <li class="list"><i class="fa fa-user"></i><a href="register.hbs">Login</a></li>
-                <li class="list"><i class="fa fa-shopping-cart"></i>Cart</li>
+                <li class="list carts"><i class="fa fa-shopping-cart"></i><a href="cart.hbs">Cart <span> 0</span></a>
+                </li>
                 <li class="list"><a href="about-us.hbs">About Us</a></li>
             </ul>
         </div>
@@ -76,13 +74,15 @@
                     <p><b>Brand:</b> Random House Publishing Group</p>
                     <label>Quantity:</label>
                     <input type="number" value="1" />
-                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                    <button type="button" class="add-cart cart1 btn btn-secondary" title="Add to cart">
+                        Add to Cart<i class="fa fa-shopping-cart"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ----product-description------- -->
+    {{!-- ----product-description------- --> --}}
     <section class="product-description">
         <div class="container">
             <h6> Product Description</h6>
@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="building_a_life.hbs"><img src="building a life worth.jpg"></a>
+                        <a href="building_a_life.hbs"><img src="building a life worth.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -137,6 +137,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -151,7 +152,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="voice_of_human.hbs"><img src="voice of human.jpg"></a>
+                        <a href="voice_of_human.hbs"><img src="voice of human.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -163,6 +164,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -177,7 +179,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="from_a_mountain.hbs"><img src="from a mountain in tibet.jpg"></a>
+                        <a href="from_a_mountain.hbs"><img src="from a mountain in tibet.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -189,6 +191,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -203,7 +206,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="hungry_hearts.hbs"><img src="hungry hearts.jpg"></a>
+                        <a href="hungry_hearts.hbs"><img src="hungry hearts.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -215,6 +218,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
