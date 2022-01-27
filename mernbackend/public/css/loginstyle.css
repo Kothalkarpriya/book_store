@@ -79,6 +79,11 @@ a {
     text-align: right;
 }
 
+.btn{
+    background-color: var(--background-color) !important;
+    color:var(--text-color) !important;
+}
+
 .list {
     display: inline;
     padding-inline-start: 1rem;
