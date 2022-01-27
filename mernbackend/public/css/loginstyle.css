@@ -90,6 +90,7 @@ a {
 /* --------- ------main ----- -------------- */
 main {
     text-align: center;
+    /* display:flex; */
 }
 
 .list-ele {
@@ -614,11 +615,6 @@ footer .row .fa{
     display:flex;
     align-items: center;
 }
-.cart-products{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;   
-}
 .product {
     width: 45%;
     display: flex;
@@ -628,9 +624,15 @@ footer .row .fa{
     border-bottom: 1px solid lightgray;
 }
 .product ion-icon {
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
+.cart-products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+
 .basketTotalContainer{
     display:flex;
     flex-direction: row;

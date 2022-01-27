@@ -16,16 +16,14 @@
     <nav class="navbar">
         <i class="fa fa-bars" id="bars"></i>
         <i class="fa fa-times" id="times"></i>
-        <!-- <div class="logo-align">
-            <img src="logo-design.svg" id="logo">
-        </div> -->
         <div>
             <h1 class="site-name"><a href="index.hbs">Book Store</a></h1>
         </div>
         <div class="nav-ele">
             <ul>
                 <li class="list"><i class="fa fa-user"></i><a href="register.hbs">Login</a></li>
-                <li class="list"><i class="fa fa-shopping-cart"></i>Cart</li>
+                <li class="list carts"><i class="fa fa-shopping-cart"></i><a href="cart.hbs">Cart <span> 0</span></a>
+                </li>
                 <li class="list"><a href="about-us.hbs">About Us</a></li>
             </ul>
         </div>
@@ -74,13 +72,15 @@
                     <p><b>Brand:</b> XYZ company</p>
                     <label>Quantity:</label>
                     <input type="number" value="1" />
-                    <button type="button" class="btn btn-primary">Add to Cart</button>
+                    <button type="button" class="add-cart cart1 btn btn-secondary" title="Add to cart">
+                        Add to Cart<i class="fa fa-shopping-cart"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- ----product-description------- -->
+    {{!-- ----product-description------- --> --}}
     <section class="product-description">
         <div class="container">
             <h6> Product Description</h6>
@@ -102,7 +102,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="operating.system.hbs"></a><img src="operating system.jpg">
+                        <a href="operating.system.hbs"> <img src="operating system.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -114,6 +114,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -123,12 +124,12 @@
                         <i class="fa fa-star-half-o"></i>
                         <h3>Operating Systems </h3>
                         <h5>Rs. 450</h5>
-    
+
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="system-programming.hbs"> <img src="system programming.jpg"></a>
+                        <a href="system-programming.hbs"><img src="system programming.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -140,6 +141,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -149,12 +151,12 @@
                         <i class="fa fa-star-o"></i>
                         <h3>System programming</h3>
                         <h5>Rs.400</h5>
-    
+
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="compiler-design.hbs"> <img src="compiler design.jpg"></a>
+                        <a href="compiler-design.hbs"> <img src="compiler design.jpg">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -166,6 +168,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -175,12 +178,12 @@
                         <i class="fa fa-star-half-o"></i>
                         <h3>compiler Design </h3>
                         <h5>Rs.400</h5>
-    
+
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="product-top">
-                        <a href="computer-science.hbs"> <img src="computer-science-500x500.png"></a>
+                        <a href="computer-science.hbs"> <img src="computer-science-500x500.png">
                         <div class="overlay-right">
                             <button type="button" class="btn btn-secondary" title="Quick shop ">
                                 <i class="fa fa-eye"></i>
@@ -192,6 +195,7 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </button>
                         </div>
+                        </a>
                     </div>
                     <div class="product-bottom text-center">
                         <i class="fa fa-star"></i>
@@ -201,7 +205,7 @@
                         <i class="fa fa-star-half-o"></i>
                         <h3>Computer science</h3>
                         <h5>Rs.550</h5>
-    
+
                     </div>
                 </div>
             </div>
