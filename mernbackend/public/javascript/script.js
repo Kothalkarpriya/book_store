@@ -48,6 +48,48 @@ let products = [
     price: 550,
     inCart: 0,
   },
+  {
+    name:"operating system", 
+    tag:"book",
+    price:450,
+    inCart:0
+  },
+  {
+    name:"The ARt of Luca", 
+    tag:"book",
+    price:2550,
+    inCart:0
+  },
+  {
+    name:"Avtar: The Last Airbender--The Rift Omnibus ", 
+    tag:"book",
+    price:1223,
+    inCart:0
+  },
+  {
+    name:"From a Mountain in Tibet", 
+    tag:"book",
+    price:517,
+    inCart:0
+  },
+  {
+    name:"Hungry Hearts", 
+    tag:"book",
+    price:391,
+    inCart:0
+  },
+  {
+    name:"Buiding a Life Worth Living", 
+    tag:"book",
+    price:419,
+    inCart:0
+  },
+  {
+    name:"The voice of Human Justice", 
+    tag:"book",
+    price:1361,
+    inCart:0
+  },
 ];
 
 for (let i = 0; i < carts.length; i++) {
